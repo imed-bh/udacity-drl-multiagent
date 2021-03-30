@@ -45,7 +45,7 @@ class Metrics:
         self.line, = plt.plot([], [], 'b-')
 
         self.ax.set_xlim(0, 1)
-        self.ax.set_ylim(0, 50)
+        self.ax.set_ylim(-1, 1)
         self.ax.set_title('Multiagent Training')
         self.ax.set_xlabel('Episodes')
         self.ax.set_ylabel('Score')
