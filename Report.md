@@ -21,10 +21,10 @@ We also use **relu** activation for the hidden layers to introduce non-linearity
 
 We use a deep network for both actor and critic with two hidden layers:
 
-Input size: 24, same as state size
-First layer: fully connected of size 256, with relu activation
-Second layer: fully connected of size 128, with relu activation
-Output layer: fully connected of 2, same as action size (with tanh activation for Actor only)
+* Input size: 24, same as state size
+* First layer: fully connected of size 256, with relu activation
+* Second layer: fully connected of size 128, with relu activation
+* Output layer: fully connected of 2, same as action size (with tanh activation for Actor only)
 
 ### Hyper-parameters
 The following hyper-parameters were used for training:
