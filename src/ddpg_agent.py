@@ -2,7 +2,6 @@ import torch
 import torch.nn.functional as F
 import numpy as np
 
-from src.agent import Agent
 from src.metrics import Metrics
 from src.model import Actor, Critic
 from src.replay import ReplayBuffer, Experience
@@ -28,9 +27,9 @@ class DDPGConfig:
         self.fc2_units = fc2_units
 
 
-class DDPGAgent(Agent):
+class DDPGAgent:
     def __init__(self, env, config: DDPGConfig):
-        super().__init__(env)
+        self.env = env
         self.config = config
         self.replay_buffer = ReplayBuffer(config.buffer_size, config.batch_size)
 
