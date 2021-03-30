@@ -42,9 +42,9 @@ The task is episodic, and in order to solve the environment, the agents must get
 The environment is considered solved, when the average (over 100 episodes) of those **scores** is at least +0.5.
 
 
-### Solving with (TODO)
+### Solving with MA-DDPG
 
-In this section, we try to solve the problem using (TODO).
+In this section, we try to solve the problem using MA-DDPG.
 Details of the model are provided in `Report.md`. 
 
 Note: you can skip the training part and use the provided pretrained `model.pt` to rollout a trained agent.
